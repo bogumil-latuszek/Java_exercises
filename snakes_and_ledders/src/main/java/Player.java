@@ -10,12 +10,6 @@ public class Player {
     }
 
     public void setPosition(int position) {
-        if(position>100){
-            int overflow = position%100;
-            this.position = 100-overflow;
-        }
-        else{
-            this.position = position;
-        }
+        this.position = position;
     }
 }
