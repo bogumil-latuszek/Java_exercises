@@ -9,6 +9,10 @@ public class Ship {
     }
 
     public boolean isWorthIt(){
+        double total_crew_weight = crew*1.5;
+        if (draft > total_crew_weight + 20 ){
+            return true;
+        }
         return false;
     }
 
